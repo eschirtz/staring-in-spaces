@@ -93,10 +93,9 @@ const scrollToSection = (sectionId: string) => {
 
   <main>
     <!-- Hero Section -->
-    <section id="hero" class="h-screen bg-gradient-to-b from-blue-600 to-blue-800 flex items-center justify-center">
-      <div class="text-center text-white">
-
-      </div>
+    <section id="hero"
+      class="mt-header h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-center bg-no-repeat"
+      style="background-image: url('/img/sis-hero.jpg');">
     </section>
 
     <!-- Tour Section -->
@@ -128,8 +127,7 @@ header {
   z-index: 50;
 }
 
-section {
-  scroll-margin-top: 120px;
-  /* Accounts for the fixed header */
+.mt-header {
+  margin-top: 108px;
 }
 </style>
