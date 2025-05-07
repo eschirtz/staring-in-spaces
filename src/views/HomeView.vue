@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import BaseButton from '@/components/BaseButton.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="flex flex-col items-center justify-center h-screen">
+    <BaseButton label="Click me" />
   </main>
 </template>
