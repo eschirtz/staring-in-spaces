@@ -95,8 +95,7 @@ const scrollToSection = (sectionId: string) => {
     <!-- Hero Section -->
     <section id="hero" class="h-screen bg-gradient-to-b from-blue-600 to-blue-800 flex items-center justify-center">
       <div class="text-center text-white">
-        <h2 class="text-5xl font-bold mb-4">Welcome to Staring in Spaces</h2>
-        <p class="text-xl">Experience the music that transcends boundaries</p>
+
       </div>
     </section>
 
@@ -104,7 +103,6 @@ const scrollToSection = (sectionId: string) => {
     <section id="tour" class="h-screen bg-gradient-to-b from-purple-600 to-purple-800 flex items-center justify-center">
       <div class="text-center text-white">
         <h2 class="text-5xl font-bold mb-4">Tour Dates</h2>
-        <p class="text-xl">Coming soon...</p>
       </div>
     </section>
 
@@ -112,7 +110,6 @@ const scrollToSection = (sectionId: string) => {
     <section id="music" class="h-screen bg-gradient-to-b from-pink-600 to-pink-800 flex items-center justify-center">
       <div class="text-center text-white">
         <h2 class="text-5xl font-bold mb-4">Music</h2>
-        <p class="text-xl">Listen to our latest tracks</p>
       </div>
     </section>
 
@@ -121,7 +118,6 @@ const scrollToSection = (sectionId: string) => {
       class="h-screen bg-gradient-to-b from-indigo-600 to-indigo-800 flex items-center justify-center">
       <div class="text-center text-white">
         <h2 class="text-5xl font-bold mb-4">Contact</h2>
-        <p class="text-xl">Get in touch with us</p>
       </div>
     </section>
   </main>
