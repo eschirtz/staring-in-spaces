@@ -1,7 +1,20 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
+const isMobile = ref(window.innerWidth < 768)
+
+const handleResize = () => {
+  isMobile.value = window.innerWidth < 768
+}
+
+onMounted(() => {
+  window.addEventListener('resize', handleResize)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('resize', handleResize)
+})
 
 const scrollToSection = (sectionId: string) => {
   const element = document.getElementById(sectionId)
@@ -95,7 +108,9 @@ const scrollToSection = (sectionId: string) => {
     <!-- Hero Section -->
     <section id="hero"
       class="mt-header h-screen flex items-center justify-center relative overflow-hidden bg-cover bg-center bg-no-repeat"
-      style="background-image: url('/img/sis-hero.jpg');">
+      :style="{
+        backgroundImage: `url(${isMobile ? '/img/sis-hero-vertical.jpeg' : '/img/sis-hero.jpg'})`
+      }">
     </section>
 
     <!-- Tour Section -->
